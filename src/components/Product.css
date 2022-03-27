@@ -1,0 +1,67 @@
+.products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+   
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+}
+
+.cart{
+    background-color:rgba(128, 128, 128, 0.767) ;
+    position: sticky;
+    top: 0px;
+    height: 575px;
+
+}
+.props{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid black;
+    grid-template-rows: auto;
+}
+.props>div{
+    border: 1px solid black;
+}
+.question{
+    /* backgroundColor:"white",textAlign:"start",padding:"10px 30px"}} */
+    background-color: white;
+    text-align: start;
+    padding: 10px 30px;
+}
+
+@media (max-width: 500px) { 
+    .products{
+        display: grid;
+        grid-template-columns: 1fr ;
+        padding-bottom: 40px;
+        order:2;
+        
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .extra-image{
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+    .cart{
+      width: 90%;
+      margin: auto;
+      height: 350px;
+      margin-top: 10px;
+    
+    }
+  .question{
+      padding: 10px 5px;
+      margin: 0px 20px;
+  }
+ }
